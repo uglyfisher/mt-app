@@ -23,7 +23,6 @@ export default {
     },
     created() {
         api.getCurPoisition().then((res) => {
-            console.log(res.data.data);
             this.$store.dispatch('setPosition', res.data.data)
         })
     }

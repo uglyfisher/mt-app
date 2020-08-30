@@ -1,13 +1,13 @@
 import axios from 'axios'
 
 var instance = axios.create({
-  baseURL: 'http://api.duyiedu.com/api'
+  baseURL: 'http://open.duyiedu.com'
 })
 
 instance.interceptors.request.use(function (config) {
   config.params = {
     ...config.params,
-    appkey: 'dongmeiqi_i_1545272862243'
+    appkey: '791531314_1556516252612'
   }
   // 在发送请求之前做些什么
   return config

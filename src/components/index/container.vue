@@ -60,7 +60,6 @@ export default {
   },
   methods: {
     over(e) {
-      console.log(e.target);
       let dom = e.target;
       let tagName = dom.tagName.toLowerCase();
       if (tagName != "dd") {
